@@ -1,0 +1,52 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.body-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.body-container>* {
+    width: 100vw;
+    height: 100vh;
+    flex: 0 0 auto;
+    text-align: center;
+    pointer-events: none;
+}
+
+.landingContainerSection {
+    background: url('./assets/landingBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.landingSection{
+    background-color: rgb(2 9 14 / 88%);
+    height: 97%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landingSection > * {
+    margin: 0px;
+} 
+
+.aboutMeContainerSection {
+    background: chocolate;
+}
+
+.skillsContainerSection {
+    background: coral;
+}
+
+.contactContainerSection {
+    background: crimson;
+}
