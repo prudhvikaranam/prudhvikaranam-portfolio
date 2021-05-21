@@ -14,10 +14,11 @@ fetchData
   });
 
 function loadIntoHtml(data) {
-  console.log("documentContent", data);
+  console.log("documentContent", data.landing.socialIcons);
   document.getElementById("landingSection").innerHTML +=
     `<h1 id="heroHeader">${data.landing.heroName}</h1>
-    <p id="heroContent">${data.landing.heroDescription}</p>
+    <p id="heroSocial">${data.landing.socialIcons}</p>
+    <p id="heroDescription">${data.landing.heroDescription}</p>
     <p id="heroContent">${data.landing.heroContent}</p>    
     `;
 }

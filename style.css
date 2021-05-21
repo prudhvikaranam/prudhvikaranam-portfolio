@@ -15,7 +15,7 @@ body {
     height: 100vh;
     flex: 0 0 auto;
     text-align: center;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 .landingContainerSection {
@@ -25,19 +25,19 @@ body {
 }
 
 
-.landingSection{
-    background-color: rgb(2 9 14 / 88%);
+.landingSection {
+    background-color: rgb(2 9 14 / 81%);
     height: 100%;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    padding: 7% 0px 0px 0px;
+    align-items: center;
 }
 
-.landingSection > * {
+.landingSection>* {
     margin: 0px;
-} 
+}
 
 .aboutMeContainerSection {
     background: chocolate;
@@ -50,3 +50,47 @@ body {
 .contactContainerSection {
     background: crimson;
 }
+
+#heroHeader {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 0% 0% 3% 0%;
+}
+#heroSocial,#heroContent,#heroDescription{
+    padding: 1% 0% 0% 0%;
+}
+#heroDescription,#heroContent{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+    padding: 1% 0% 0% 0%;
+}
+
+#heroContent{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 22px !important;
+    width: 27px;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 25%;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-github{
+    background: black;
+  }

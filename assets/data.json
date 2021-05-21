@@ -1,10 +1,11 @@
 {
     "landing" : {
-        "heroName" : "Prudhvi Karanam",
+        "heroName" : "Prudhvi Teja Karanam",
         "heroDescription" : "I'm a web developer",
-        "heroContent" : "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+        "heroContent" : "I focus on writing clean, elegant and efficient code.",
+        "socialIcons" : "<i class='fa fa-github' aria-hidden='true'></i> &nbsp; <a href='#' class='fa fa-linkedin'></a> &nbsp; <a href='#' class='fa fa-facebook'></a> "
     },
     "about" : {
 
-    }
+    } 
 }
