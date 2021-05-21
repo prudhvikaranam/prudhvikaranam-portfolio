@@ -1,8 +1,8 @@
 {
     "landing" : {
-        "heroName" : "Prudhvi Teja Karanam",
-        "heroDescription" : "I'm a web developer",
-        "heroContent" : "I focus on writing clean, elegant and efficient code.",
+        "heroName" : "Prudhvi Teja. Karanam",
+        "heroDescription" : "Hi, I'm a web developer",
+        "heroContent" : "I focus on writing clean, elegant and efficient code.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
         "socialIcons" : "<i class='fa fa-github' aria-hidden='true'></i> &nbsp; <a href='#' class='fa fa-linkedin'></a> &nbsp; <a href='#' class='fa fa-facebook'></a> "
     },
     "about" : {

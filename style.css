@@ -1,18 +1,23 @@
+/* html {
+    scroll-behavior: smooth;
+} */
+
 body {
     margin: 0%;
     padding: 0%;
+    scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
 
 .body-container {
     width: 100vw;
-    height: 100vh;
+    height: 94vh;
     display: flex;
 }
 
 .body-container>* {
     width: 100vw;
-    height: 100vh;
+    height: 94vh;
     flex: 0 0 auto;
     text-align: center;
     /* pointer-events: none; */
@@ -31,12 +36,21 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 7% 0px 0px 0px;
     align-items: center;
 }
 
-.landingSection>* {
+.section>* {
     margin: 0px;
+}
+
+.section {
+    width: 100%;
+    position: relative;
+    top: 14%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .aboutMeContainerSection {
@@ -56,19 +70,17 @@ body {
     font-size: 55px;
     text-transform: uppercase;
     font-weight: 100;
-    padding: 0% 0% 3% 0%;
+    /* padding: 0% 0% 2% 0%; */
 }
-#heroSocial,#heroContent,#heroDescription{
-    padding: 1% 0% 0% 0%;
-}
-#heroDescription,#heroContent{
+
+#heroDescription,
+#heroContent {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: xx-large;
     font-weight: 600;
-    padding: 1% 0% 0% 0%;
 }
 
-#heroContent{
+#heroContent {
     font-size: 22px;
     font-weight: 500;
 }
@@ -80,17 +92,54 @@ body {
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 25%;
-  }
-  .fa-facebook {
+}
+
+.fa-facebook {
     background: #3B5998;
     color: white;
-  }
-  
-  .fa-linkedin {
+}
+
+.fa-linkedin {
     background: #007bb5;
     color: white;
-  }
+}
 
-  .fa-github{
+.fa-github {
     background: black;
-  }
+}
+
+.desktopBodyNavigation {
+    height: 6vh;
+}
+
+.navigators>* {
+    cursor: pointer;
+}
+
+.navigators {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    height: 100%;
+    align-items: center;
+    font-weight: 700;
+    background: rgb(0 0 0 / 90%);
+    color: white;
+}
+
+
+@media (min-width:380px) and (max-width:480px) {
+    .desktopBodyNavigation {
+        display: none;
+    }
+    .fa{
+        padding: 0%;
+    }
+}
+
+@media (min-width:481px){
+    .mobileBodyNavigation {
+        display: none;
+    }
+}

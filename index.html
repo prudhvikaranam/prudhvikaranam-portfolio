@@ -15,19 +15,39 @@
 </head>
 
 <body>
-    <div class="body body-container" id="body" style="overflow: hidden;">
-        <div class="landingContainerSection" id="landingContainerSection">
-            <div class="landingSection" id="landingSection">
+    <div class="main-container" id="main-container">
+        <div class="body body-container" id="body" style="overflow: hidden;">
+            <div class="landingContainerSection" id="Home">
+                <div class="landingSection" id="landingSection">
+                    <div class="section" id="section">
+                    </div>
+                </div>
+            </div>
+            <div class="aboutMeContainerSection" id="About Me">
+                aboutMeSection
+            </div>
+            <div class="skillsContainerSection" id="Skills">
+                skillsSection
+            </div>
+            <div class="contactContainerSection" id="Contact">
+                contactSection
             </div>
         </div>
-        <div class="aboutMeContainerSection" id="aboutMeSection">
-            aboutMeSection
+        <div class="desktopBodyNavigation" id="desktopBodyNavigation">
+            <div class="navigators" id="navigators" onclick="myFunction(event)">
+                <span>Home</span>
+                <span>About Me</span>
+                <span>Skills</span>
+                <span>Contact</span>
+            </div>
         </div>
-        <div class="skillsContainerSection" id="skillsSection">
-            skillsSection
-        </div>
-        <div class="contactContainerSection" id="contactSection">
-            contactSection
+        <div class="mobileBodyNavigation" id="mobileBodyNavigation">
+            <div class="navigators" id="navigators" onclick="myFunction(event)">
+                <span><i class="fa fa-home Home" aria-hidden="true"></i></span>
+                <span><i class="fa fa-user-o About Me" aria-hidden="true"></i></span>
+                <span><i class="fa fa-laptop Skills" aria-hidden="true"></i></span>
+                <span><i class="fa fa-envelope-open Contact" aria-hidden="true"></i></span>
+            </div>
         </div>
     </div>
 </body>

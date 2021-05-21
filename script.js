@@ -15,10 +15,22 @@ fetchData
 
 function loadIntoHtml(data) {
   console.log("documentContent", data.landing.socialIcons);
-  document.getElementById("landingSection").innerHTML +=
-    `<h1 id="heroHeader">${data.landing.heroName}</h1>
+  document.getElementById(
+    "section"
+  ).innerHTML += `<h1 id="heroHeader">${data.landing.heroName}</h1>
     <p id="heroSocial">${data.landing.socialIcons}</p>
     <p id="heroDescription">${data.landing.heroDescription}</p>
     <p id="heroContent">${data.landing.heroContent}</p>    
     `;
+}
+
+function myFunction(e) {
+  console.log(e);
+  let selectedKey;
+  if(e.target.innerHTML != ''){
+    selectedKey = e.target.innerHTML;
+  }else{
+    selectedKey = e.target.className;
+  }
+  document.getElementById(selectedKey).scrollIntoView({ behavior: "smooth" });
 }
