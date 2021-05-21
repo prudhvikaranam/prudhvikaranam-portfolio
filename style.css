@@ -13,6 +13,7 @@ body {
     width: 100vw;
     height: 94vh;
     display: flex;
+    overflow: hidden;
 }
 
 .body-container>* {
@@ -20,7 +21,7 @@ body {
     height: 94vh;
     flex: 0 0 auto;
     text-align: center;
-    /* pointer-events: none; */
+    pointer-events: none;
 }
 
 .landingContainerSection {
@@ -136,10 +137,16 @@ body {
     .fa{
         padding: 0%;
     }
+    .body-container{
+        overflow: auto !important;
+    }
 }
 
 @media (min-width:481px){
     .mobileBodyNavigation {
         display: none;
+    }
+    body {
+        -webkit-overflow-scrolling: touch;
     }
 }
