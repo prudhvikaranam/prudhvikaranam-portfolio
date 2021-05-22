@@ -16,11 +16,12 @@ fetchData
 function loadIntoHtml(data) {
   console.log("documentContent", data.landing.socialIcons);
   document.getElementById(
-    "section"
+    "lander"
   ).innerHTML += `<h1 id="heroHeader">${data.landing.heroName}</h1>
-    <p id="heroSocial">${data.landing.socialIcons}</p>
     <p id="heroDescription">${data.landing.heroDescription}</p>
-    <p id="heroContent">${data.landing.heroContent}</p>    
+    <p id="heroContent">${data.landing.heroContent}</p>
+    <p id="heroSocial">${data.landing.socialIcons}</p>
+    <p><button  id="moreAboutButton">More About Me <i class="fa fa-arrow-right" aria-hidden="true"></i></button></p>
     `;
 }
 
@@ -33,4 +34,19 @@ function myFunction(e) {
     selectedKey = e.target.className;
   }
   document.getElementById(selectedKey).scrollIntoView({ behavior: "smooth" });
+}
+
+
+/* Get the element you want displayed in fullscreen */ 
+var elem = document.getElementById("resume");
+
+/* Function to open fullscreen mode */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
 }

@@ -8,6 +8,9 @@
     <title>Prudhvi Karanam</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,7 +22,7 @@
         <div class="body body-container" id="body" style="overflow: hidden;">
             <div class="landingContainerSection" id="Home">
                 <div class="landingSection" id="landingSection">
-                    <div class="section" id="section">
+                    <div class="lander" id="lander">
                     </div>
                 </div>
             </div>
@@ -27,7 +30,69 @@
                 aboutMeSection
             </div>
             <div class="skillsContainerSection" id="Skills">
-                skillsSection
+
+                <div class="containerSkills" id="containrSkills">
+                    <div class="html">
+                        <p class="bar-title">
+                            HTML / HTML5 & CSS
+                            <span class="percent align-right">90%</span>
+                        </p>
+                        <div class="bar">
+                            <div class="bar-fill bar-fill-html start"></div>
+                        </div>
+                    </div>
+                    <div class="javascript">
+                        <p class="bar-title">
+                            Javascript
+                            <span class="percent align-right">70%</span>
+                        </p>
+                        <div class="bar">
+                            <div class="bar-fill bar-fill-javascript start"></div>
+                        </div>
+                    </div>
+                    <div class="angular">
+                        <p class="bar-title">
+                            Angular 2+
+                            <span class="percent align-right">75%</span>
+                        </p>
+                        <div class="bar">
+                            <div class="bar-fill bar-fill-angular start"></div>
+                        </div>
+                    </div>
+                    <div class="rxjs">
+                        <p class="bar-title">
+                            RXJS
+                            <span class="percent align-right">70%</span>
+                        </p>
+                        <div class="bar">
+                            <div class="bar-fill bar-fill-rxjs start"></div>
+                        </div>
+                    </div>
+                    <div class="nodeJs">
+                        <p class="bar-title">
+                            NodeJs
+                            <span class="percent align-right">40%</span>
+                        </p>
+                        <div class="bar">
+                            <div class="bar-fill bar-fill-nodeJs start"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerResume" id="containerResume">
+
+                    <div class="resumeTools" id="resumeTools">
+                        <button onclick="openFullscreen();" class="skillsButton fullscreen">Full screen<i
+                                class="icon-fullscreen skillsIcon"></i></button>
+                        <button onclick="openFullscreen();" class="skillsButton download">Download Resume<i
+                                class="fa fa-download skillsIcon" aria-hidden="true"></i></button>
+                    </div>
+                    <iframe frameborder="0" scrolling="no" fullscreen="true" width="100%" height="92%"
+                        src="./assets/Prudhvi Teja Karanam_UI developer, 6.7  years Exp.pdf#toolbar=0"
+                        style="border:1px solid" id="resume">
+                    </iframe>
+                </div>
+
             </div>
             <div class="contactContainerSection" id="Contact">
                 contactSection
