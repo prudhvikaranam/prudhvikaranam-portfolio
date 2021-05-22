@@ -3,8 +3,8 @@
 } */
 
 body {
-    margin: 0%;
-    padding: 0%;
+    margin: 0% !important;
+    padding: 0% !important;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
@@ -60,7 +60,7 @@ body {
 }
 
 .skillsContainerSection {
-    background: coral;
+    background: rgb(145 208 206 / 24%);
 }
 
 .contactContainerSection {
@@ -87,29 +87,32 @@ body {
     font-weight: 500;
 }
 
-.fa {
-    padding: 15px;
-    font-size: 22px;
-    width: 27px;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 25%;
+#heroSocial {
+    display: flex;
+    justify-content: center;
 }
 
-.fa-facebook {
-    background: #3B5998;
+.fa-github:before {
     color: white;
+    font-size: 40px;
 }
 
 .fa-linkedin {
     background: #007bb5;
     color: white;
+    padding: 10px;
 }
 
-.fa-github {
-    background: black;
+.fa-linkedin:before,
+.fa-facebook:before {
+    font-size: 20px;
 }
 
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 10px;
+}
 
 
 
@@ -120,23 +123,26 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bolder;
 }
 
 .containerSkills {
     width: 45%;
-    height: 65%;
 }
 
 .bar {
     position: relative;
     background-color: #d8d8d8;
-    height: 10px;
+    height: 20px;
     margin: 0 0 20px 0;
+    border-radius: 5%;
 }
 
 .bar-fill {
     position: absolute;
-    height: 10px;
+    border-radius: 5%;
+    height: 20px;
 }
 
 .bar-title {
@@ -308,7 +314,7 @@ body {
     }
 }
 
-/*Edit here for Photoshop*/
+/*Edit here for nodejs*/
 .bar-fill-nodeJs {
     width: 40%;
     background-color: #0a73dc;
@@ -347,6 +353,32 @@ body {
     }
 }
 
+.secondarySkills {
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.secondarySkills>p{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+}
+.coreSkillsIcon.fa-github:before {
+    color: black;
+}
+
+.fa-linux:before {
+    content: "\f17c";
+    font-size: 40px;
+}
+
+.fa-jenkins:before {
+    content: "\f3b6";
+    font-size: 40px;
+}
+
 
 .containerResume {
     width: 45%;
@@ -365,7 +397,7 @@ body {
     color: black;
 }
 
-.skillsIcon{
+.skillsIcon {
     padding: 0%;
     margin: 0%;
 }
@@ -422,13 +454,18 @@ body {
     .desktopBodyNavigation {
         display: none;
     }
-
-    .fa {
-        padding: 0%;
-    }
-
     .body-container {
         overflow: auto !important;
+    }
+    .skillsContainerSection{
+        flex-direction: column;
+    }
+    .containerSkills {
+        width: 75%;
+    }
+    .containerResume {
+        width: auto;
+        height: auto;
     }
 }
 
