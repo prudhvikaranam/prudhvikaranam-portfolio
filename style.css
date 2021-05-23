@@ -478,3 +478,20 @@ body {
         -webkit-overflow-scrolling: touch;
     }
 }
+
+@media (max-width:768px) {
+   .onlineResume, .fullscreen{
+       display: none;
+   }
+}
+
+@media (max-width:992px) {
+    .body-container {
+        overflow: auto !important;
+        overflow-y: hidden !important;
+    }
+
+    body {
+        -webkit-overflow-scrolling: touch;
+    }
+}
