@@ -1,0 +1,224 @@
+
+
+.bar {
+    position: relative;
+    background-color: #d8d8d8;
+    height: 20px;
+    margin: 0 0 20px 0;
+    border-radius: 5%;
+  }
+  
+  .bar-fill {
+    position: absolute;
+    border-radius: 5%;
+    height: 20px;
+  }
+  
+  .bar-title {
+    position: relative;
+    font-size: 1em;
+    text-align: left;
+    margin: 0 0 5px 0;
+  }
+  
+  .percent {
+    position: absolute;
+    right: 0;
+  }
+
+/* Animations Below - Replace ease-out with infinite for infinite loop*/
+/*Edit here for html*/
+.bar-fill-html {
+    width: 90%;
+    background-color: #e44d26;
+    animation: bar-fill-html 2s ease-out;
+    -moz-animation: bar-fill-html 2s ease-out;
+    -webkit-animation: bar-fill-html 2s ease-out;
+  }
+  
+  @keyframes bar-fill-html {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 90%;
+    }
+  }
+  
+  @-moz-keyframes bar-fill-html {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 90%;
+    }
+  }
+  
+  @-webkit-keyframes bar-fill-html {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 90%;
+    }
+  }
+  
+  /*Edit here for Javascript*/
+  .bar-fill-javascript {
+    width: 70%;
+    background-color: #f8dc3d;
+    animation: bar-fill-javascript 2s ease-out;
+    -moz-animation: bar-fill-javascript 2s ease-out;
+    -webkit-animation: bar-fill-javascript 2s ease-out;
+  }
+  
+  @keyframes bar-fill-javascript {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 70%;
+    }
+  }
+  
+  @-moz-keyframes bar-fill-javascript {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 70%;
+    }
+  }
+  
+  @-webkit-keyframes bar-fill-javascript {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 70%;
+    }
+  }
+  
+  /*Edit here for angular*/
+  .bar-fill-angular {
+    width: 75%;
+    background-color: #131b28;
+    animation: bar-fill-angular 2s ease-out;
+    -moz-animation: bar-fill-angular 2s ease-out;
+    -webkit-animation: bar-fill-angular 2s ease-out;
+  }
+  
+  @keyframes bar-fill-angular {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 75%;
+    }
+  }
+  
+  @-moz-keyframes bar-fill-angular {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 75%;
+    }
+  }
+  
+  @-webkit-keyframes bar-fill-angular {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 75%;
+    }
+  }
+  
+  /*Edit here for rxjs*/
+  .bar-fill-rxjs {
+    width: 70%;
+    background-color: #429f46;
+    animation: bar-fill-rxjs 2s ease-out;
+    -moz-animation: bar-fill-rxjs 2s ease-out;
+    -webkit-animation: bar-fill-rxjs 2s ease-out;
+  }
+  
+  @keyframes bar-fill-rxjs {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 70%;
+    }
+  }
+  
+  @-moz-keyframes bar-fill-rxjs {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 70%;
+    }
+  }
+  
+  @-webkit-keyframes bar-fill-rxjs {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 70%;
+    }
+  }
+  
+  /*Edit here for nodejs*/
+  .bar-fill-nodeJs {
+    width: 40%;
+    background-color: #0a73dc;
+    animation: bar-fill-nodeJs 2s ease-out;
+    -moz-animation: bar-fill-nodeJs 2s ease-out;
+    -webkit-animation: bar-fill-nodeJs 2s ease-out;
+  }
+  
+  @keyframes bar-fill-nodeJs {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 40%;
+    }
+  }
+  
+  @-moz-keyframes bar-fill-nodeJs {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 40%;
+    }
+  }
+  
+  @-webkit-keyframes bar-fill-nodeJs {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 40%;
+    }
+  }
+  

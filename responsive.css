@@ -1,0 +1,51 @@
+/* Media queries */
+
+@media (min-width: 380px) and (max-width: 480px) {
+  .body-container {
+    height: 100%;
+    display: block;
+  }
+  .desktopBodyNavigation {
+    display: none;
+  }
+  .body-container {
+    overflow: auto !important;
+  }
+  .landingContainerSection {
+    height: 100vh;
+  }
+  .lander {
+    width: 100%;
+  }
+
+  #heroHeader {
+    font-size: 5vw;
+  }
+  #heroHeader #name {
+    font-size: 7vw;
+  }
+
+  #heroDescription,
+  #heroContent {
+    font-size: 4vw;
+    font-weight: 300;
+  }
+
+  #moreAboutButton {
+    font-size: 3vw;
+  }
+  .emptyLander {
+    display: none;
+  }
+
+  .skillsContainerSection {
+    flex-direction: column;
+  }
+  .containerSkills {
+    width: 75%;
+  }
+  .containerResume {
+    width: auto;
+    height: auto;
+  }
+}

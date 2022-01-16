@@ -1,9 +1,8 @@
 {
     "landing" : {
-        "heroName" : "Prudhvi Teja Karanam",
-        "heroDescription" : "Hi, I'm a web developer",
-        "heroContent" : "I majorly work on developing User Interfaces<br>I focus on writing clean, elegant and efficient code.",
-        "socialIcons" : "<a href='#'><i class='fa fa-github' aria-hidden='true'></i></a> &nbsp; <a href='#'><i class='fa fa-linkedin'></i></a>&nbsp;<a href='#'><i class='fa fa-facebook' aria-hidden='true'></i></a>"
+        "heroName" : "Hi, I'm <span id = 'name'>Prudhvi Teja Karanam</span>",
+        "heroDescription" : "I design and develop User Interfaces",
+        "heroContent" : "I majorly work on developing User Interfaces, I focus on writing clean, elegant and efficient code."
     },
     "about" : {
         

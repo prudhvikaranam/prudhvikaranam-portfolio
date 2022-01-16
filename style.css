@@ -1,497 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 /* html {
     scroll-behavior: smooth;
 } */
 
 body {
-    margin: 0% !important;
-    padding: 0% !important;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+  margin: 0% !important;
+  padding: 0% !important;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .body-container {
-    width: 100vw;
-    height: 94vh;
-    display: flex;
-    overflow: hidden;
+  width: 100vw;
+  height: 94vh;
+  display: flex;
+  overflow: hidden;
 }
 
-.body-container>* {
-    width: 100vw;
-    height: 94vh;
-    flex: 0 0 auto;
-    text-align: center;
-    /* pointer-events: none; */
+.body-container > * {
+  width: 100vw;
+  height: 94vh;
+  flex: 0 0 auto;
+  text-align: center;
+  /* pointer-events: none; */
 }
 
 .landingContainerSection {
-    background: url('./assets/landingBackground.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background: #363636;
 }
 
-
-.landingSection {
-    background-color: rgb(2 9 14 / 81%);
-    height: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.lander>* {
-    margin: 0px;
+.lander > * {
+  margin: 20px 0px;
 }
 
 .lander {
-    width: 100%;
-    position: relative;
-    top: 14%;
-    height: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  width: 80%;
+  z-index: 10;
 }
 
-.aboutMeContainerSection {
-    background: chocolate;
+.emptyLander {
+  width: 30%;
+  height: 100%;
+  background-color: #cb8101;
 }
 
-.skillsContainerSection {
-    background: rgb(145 208 206 / 24%);
+.imagee {
+  background: url(./assets/profileimage.png);
+  background-repeat: no-repeat;
+  width: 113%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  right: 228px;
+  background-position-y: -43px;
+  filter: drop-shadow(1px 4px 2px black);
+  background-size: 105%;
 }
-
-.contactContainerSection {
-    background: crimson;
-}
+/* Lander */
 
 #heroHeader {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 55px;
-    text-transform: uppercase;
-    font-weight: 100;
-    padding: 0% 0% 3% 0%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 0% 0% 3% 0%;
+}
+#heroHeader #name {
+  font-size: 55px;
+  font-weight: bolder;
+  color: #cb8101;
 }
 
 #heroDescription,
 #heroContent {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: xx-large;
-    font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 27px;
+  font-weight: 300;
 }
 
 #heroContent {
-    font-size: 22px;
-    font-weight: 500;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 #heroSocial {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .fa-github:before {
-    color: white;
-    font-size: 40px;
+  color: white;
+  font-size: 40px;
 }
 
 .fa-linkedin {
-    background: #007bb5;
-    color: white;
-    padding: 10px;
+  background: #007bb5;
+  color: white;
+  padding: 10px;
 }
 
 .fa-linkedin:before,
 .fa-facebook:before {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .fa-facebook {
-    background: #3B5998;
-    color: white;
-    padding: 10px;
+  background: #3b5998;
+  color: white;
+  padding: 10px;
 }
-
-
-
 
 /* Skills Section */
 
 .skillsContainerSection {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
 }
 
 .containerSkills {
-    width: 45%;
-}
-
-.bar {
-    position: relative;
-    background-color: #d8d8d8;
-    height: 20px;
-    margin: 0 0 20px 0;
-    border-radius: 5%;
-}
-
-.bar-fill {
-    position: absolute;
-    border-radius: 5%;
-    height: 20px;
-}
-
-.bar-title {
-    position: relative;
-    font-size: 1em;
-    text-align: left;
-    margin: 0 0 5px 0;
-}
-
-.percent {
-    position: absolute;
-    right: 0;
-}
-
-/* Animations Below - Replace ease-out with infinite for infinite loop*/
-/*Edit here for html*/
-.bar-fill-html {
-    width: 90%;
-    background-color: #e44d26;
-    animation: bar-fill-html 2s ease-out;
-    -moz-animation: bar-fill-html 2s ease-out;
-    -webkit-animation: bar-fill-html 2s ease-out;
-}
-
-@keyframes bar-fill-html {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 90%;
-    }
-}
-
-@-moz-keyframes bar-fill-html {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 90%;
-    }
-}
-
-@-webkit-keyframes bar-fill-html {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 90%;
-    }
-}
-
-/*Edit here for Javascript*/
-.bar-fill-javascript {
-    width: 70%;
-    background-color: #f8dc3d;
-    animation: bar-fill-javascript 2s ease-out;
-    -moz-animation: bar-fill-javascript 2s ease-out;
-    -webkit-animation: bar-fill-javascript 2s ease-out;
-}
-
-@keyframes bar-fill-javascript {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 70%;
-    }
-}
-
-@-moz-keyframes bar-fill-javascript {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 70%;
-    }
-}
-
-@-webkit-keyframes bar-fill-javascript {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 70%;
-    }
-}
-
-/*Edit here for angular*/
-.bar-fill-angular {
-    width: 75%;
-    background-color: #131b28;
-    animation: bar-fill-angular 2s ease-out;
-    -moz-animation: bar-fill-angular 2s ease-out;
-    -webkit-animation: bar-fill-angular 2s ease-out;
-}
-
-@keyframes bar-fill-angular {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 75%;
-    }
-}
-
-@-moz-keyframes bar-fill-angular {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 75%;
-    }
-}
-
-@-webkit-keyframes bar-fill-angular {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 75%;
-    }
-}
-
-/*Edit here for rxjs*/
-.bar-fill-rxjs {
-    width: 70%;
-    background-color: #429f46;
-    animation: bar-fill-rxjs 2s ease-out;
-    -moz-animation: bar-fill-rxjs 2s ease-out;
-    -webkit-animation: bar-fill-rxjs 2s ease-out;
-}
-
-@keyframes bar-fill-rxjs {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 70%;
-    }
-}
-
-@-moz-keyframes bar-fill-rxjs {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 70%;
-    }
-}
-
-@-webkit-keyframes bar-fill-rxjs {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 70%;
-    }
-}
-
-/*Edit here for nodejs*/
-.bar-fill-nodeJs {
-    width: 40%;
-    background-color: #0a73dc;
-    animation: bar-fill-nodeJs 2s ease-out;
-    -moz-animation: bar-fill-nodeJs 2s ease-out;
-    -webkit-animation: bar-fill-nodeJs 2s ease-out;
-}
-
-@keyframes bar-fill-nodeJs {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 40%;
-    }
-}
-
-@-moz-keyframes bar-fill-nodeJs {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 40%;
-    }
-}
-
-@-webkit-keyframes bar-fill-nodeJs {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 40%;
-    }
+  width: 45%;
 }
 
 .secondarySkills {
-    display: flex;
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.secondarySkills>p{
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-
+.secondarySkills > p {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
 }
 .coreSkillsIcon.fa-github:before {
-    color: black;
+  color: black;
 }
 
 .fa-linux:before {
-    content: "\f17c";
-    font-size: 40px;
+  content: "\f17c";
+  font-size: 40px;
 }
 
 .fa-jenkins:before {
-    content: "\f3b6";
-    font-size: 40px;
+  content: "\f3b6";
+  font-size: 40px;
 }
-
 
 .containerResume {
-    width: 45%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  width: 45%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-
 .skillsButton {
-    border: none;
-    border-radius: 5%;
-    padding: 10px;
-    background: #17c38a;
-    color: black;
+  border: none;
+  border-radius: 5%;
+  padding: 10px;
+  background: #17c38a;
+  color: black;
 }
 
 .skillsIcon {
-    padding: 0%;
-    margin: 0%;
+  padding: 0%;
+  margin: 0%;
 }
 
 /* Skills section ends here */
 
-
-
-
-
-
-
-
-
-
-
 .desktopBodyNavigation {
-    height: 6vh;
+  height: 6vh;
 }
 
-.navigators>* {
-    cursor: pointer;
+.navigators > * {
+  cursor: pointer;
 }
 
 .navigators {
-    font-family: 'Barlow Condensed', sans-serif;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 20px;
-    height: 100%;
-    align-items: center;
-    font-weight: 700;
-    background: rgb(0 0 0 / 90%);
-    color: white;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  height: 100%;
+  align-items: center;
+  font-weight: 100;
+  background: rgb(0 0 0 / 90%);
+  color: white;
+}
+
+.navigator.active {
+  color: #cb8101;
+  font-weight: 400;
 }
 
 #moreAboutButton {
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(3 24 34 / 35%);
-    color: white;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 20px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #cb8101;
+  background-color: rgb(3 24 34 / 35%);
+  color: #cb8101;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
 }
 
+#moreAboutButton:hover {
+  color: white;
+  background-color: #cb8101;
+}
 
 .fa-arrow-right {
-    font-size: 15px !important;
-    padding: 0px;
-}
-
-@media (min-width:380px) and (max-width:480px) {
-    .desktopBodyNavigation {
-        display: none;
-    }
-    .body-container {
-        overflow: auto !important;
-    }
-    .skillsContainerSection{
-        flex-direction: column;
-    }
-    .containerSkills {
-        width: 75%;
-    }
-    .containerResume {
-        width: auto;
-        height: auto;
-    }
-}
-
-@media (min-width:481px) {
-    .mobileBodyNavigation {
-        display: none;
-    }
-
-    body {
-        -webkit-overflow-scrolling: touch;
-    }
-}
-
-@media (max-width:768px) {
-   .onlineResume, .fullscreen{
-       display: none;
-   }
-}
-
-@media (max-width:992px) {
-    .body-container {
-        overflow: auto !important;
-        overflow-y: hidden !important;
-    }
-
-    body {
-        -webkit-overflow-scrolling: touch;
-    }
+  font-size: 15px !important;
+  padding: 0px;
 }

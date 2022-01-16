@@ -1,131 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prudhvi Karanam</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
-        rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="skillbar.css" />
+    <link rel="stylesheet" href="responsive.css" />
 
-<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  </head>
+
+  <body>
     <div class="main-container" id="main-container">
-        <div class="body body-container" id="body" style="overflow: hidden;">
-            <div class="landingContainerSection" id="Home">
-                <div class="landingSection" id="landingSection">
-                    <div class="lander" id="lander">
-                    </div>
-                </div>
-            </div>
-            <div class="aboutMeContainerSection" id="About Me">
-                aboutMeSection
-            </div>
-            <div class="skillsContainerSection" id="Skills">
-
-                <div class="containerSkills" id="containrSkills">
-                    <h3>Technologies I Know</h3>
-                    <div class="coreSkills" id="coreSkills">
-                        <div class="html">
-                            <p class="bar-title">
-                                HTML / HTML5 & CSS
-                                <span class="percent align-right">90%</span>
-                            </p>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-html start"></div>
-                            </div>
-                        </div>
-                        <div class="javascript">
-                            <p class="bar-title">
-                                Javascript
-                                <span class="percent align-right">70%</span>
-                            </p>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-javascript start"></div>
-                            </div>
-                        </div>
-                        <div class="angular">
-                            <p class="bar-title">
-                                Angular 2+
-                                <span class="percent align-right">75%</span>
-                            </p>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-angular start"></div>
-                            </div>
-                        </div>
-                        <div class="rxjs">
-                            <p class="bar-title">
-                                RXJS
-                                <span class="percent align-right">70%</span>
-                            </p>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-rxjs start"></div>
-                            </div>
-                        </div>
-                        <div class="nodeJs">
-                            <p class="bar-title">
-                                NodeJs
-                                <span class="percent align-right">40%</span>
-                            </p>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-nodeJs start"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="secondarySkills" id="secondarySkills">
-                        <p><i class='fa fa-github coreSkillsIcon' aria-hidden='true'></i>Git</p>
-                        <p><i class="fa fa-linux coreSkillsIcon" aria-hidden="true"></i>Linux</p>
-                        <p><i class="fab fa-jenkins" aria-hidden="true"></i>Jenkins</p>
-                    </div>
-                </div>
-
-                <div class="containerResume" id="containerResume">
-
-                    <div class="resumeTools" id="resumeTools">
-                        <button onclick="openFullscreen();" class="skillsButton fullscreen">Full screen <i
-                                class="icon-fullscreen skillsIcon"></i></button>
-                        <button onclick="openFullscreen();" class="skillsButton download">Download Resume <i
-                                class="fa fa-download skillsIcon" aria-hidden="true"></i></button>
-                    </div>
-                    <div class="onlineResume" id="onlineResume" style="height:90%">
-                        <iframe frameborder="0" scrolling="no" fullscreen="true" width="100%" height="100%"
-                            src="./assets/Prudhvi Teja Karanam_UI developer, 6.7  years Exp.pdf#toolbar=0"
-                            style="border:1px solid" id="resume">
-                        </iframe>
-                    </div>
-                </div>
-
-            </div>
-            <div class="contactContainerSection" id="Contact">
-                contactSection
-            </div>
+      <div class="body body-container" id="body" style="overflow: hidden">
+        <div class="landingContainerSection" id="Home">
+          <div class="landerContainer" id="landerContainer">
+            <div class="lander" id="lander"></div>
+          </div>
+          <div class="emptyLander">
+            <div class="imagee" id="imagee"></div>
+          </div>
         </div>
-        <div class="desktopBodyNavigation" id="desktopBodyNavigation">
-            <div class="navigators" id="navigators" onclick="myFunction(event)">
-                <span>Home</span>
-                <span>About Me</span>
-                <span>Skills</span>
-                <span>Contact</span>
-            </div>
+        <div class="aboutMeContainerSection" id="About Me">
+          <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a> &nbsp;
+          <a href="#"><i class="fa fa-linkedin"></i></a>&nbsp;<a href="#"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
         </div>
-        <div class="mobileBodyNavigation" id="mobileBodyNavigation">
-            <div class="navigators" id="navigators" onclick="myFunction(event)">
-                <span><i class="fa fa-home Home" aria-hidden="true"></i></span>
-                <span><i class="fa fa-user-o About Me" aria-hidden="true"></i></span>
-                <span><i class="fa fa-laptop Skills" aria-hidden="true"></i></span>
-                <span><i class="fa fa-envelope-open Contact" aria-hidden="true"></i></span>
+        <div class="skillsContainerSection" id="Skills">
+          <div class="containerSkills" id="containrSkills">
+            <h3>Technologies I Know</h3>
+            <div class="coreSkills" id="coreSkills">
+              <div class="html">
+                <p class="bar-title">
+                  HTML / HTML5 & CSS
+                  <span class="percent align-right">90%</span>
+                </p>
+                <div class="bar">
+                  <div class="bar-fill bar-fill-html start"></div>
+                </div>
+              </div>
+              <div class="javascript">
+                <p class="bar-title">
+                  Javascript
+                  <span class="percent align-right">70%</span>
+                </p>
+                <div class="bar">
+                  <div class="bar-fill bar-fill-javascript start"></div>
+                </div>
+              </div>
+              <div class="angular">
+                <p class="bar-title">
+                  Angular 2+
+                  <span class="percent align-right">75%</span>
+                </p>
+                <div class="bar">
+                  <div class="bar-fill bar-fill-angular start"></div>
+                </div>
+              </div>
+              <div class="rxjs">
+                <p class="bar-title">
+                  RXJS
+                  <span class="percent align-right">70%</span>
+                </p>
+                <div class="bar">
+                  <div class="bar-fill bar-fill-rxjs start"></div>
+                </div>
+              </div>
+              <div class="nodeJs">
+                <p class="bar-title">
+                  NodeJs
+                  <span class="percent align-right">40%</span>
+                </p>
+                <div class="bar">
+                  <div class="bar-fill bar-fill-nodeJs start"></div>
+                </div>
+              </div>
             </div>
+            <div class="secondarySkills" id="secondarySkills">
+              <p>
+                <i class="fa fa-github coreSkillsIcon" aria-hidden="true"></i
+                >Git
+              </p>
+              <p>
+                <i class="fa fa-linux coreSkillsIcon" aria-hidden="true"></i
+                >Linux
+              </p>
+              <p><i class="fab fa-jenkins" aria-hidden="true"></i>Jenkins</p>
+            </div>
+          </div>
+
+          <div class="containerResume" id="containerResume">
+            <div class="resumeTools" id="resumeTools">
+              <button
+                onclick="openFullscreen();"
+                class="skillsButton fullscreen"
+              >
+                Full screen <i class="icon-fullscreen skillsIcon"></i>
+              </button>
+              <button onclick="openFullscreen();" class="skillsButton download">
+                Download Resume
+                <i class="fa fa-download skillsIcon" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="onlineResume" id="onlineResume" style="height: 90%">
+              <iframe
+                frameborder="0"
+                scrolling="no"
+                fullscreen="true"
+                width="100%"
+                height="100%"
+                src="./assets/Prudhvi Teja Karanam_UI developer, 6.7  years Exp.pdf#toolbar=0"
+                style="border: 1px solid"
+                id="resume"
+              >
+              </iframe>
+            </div>
+          </div>
         </div>
+        <div class="contactContainerSection" id="Contact">contactSection</div>
+      </div>
+      <div class="desktopBodyNavigation" id="desktopBodyNavigation">
+        <div class="navigators" id="navigators">
+          <span class="navigator">Home</span>
+          <span class="navigator">About Me</span>
+          <span class="navigator">Skills</span>
+          <span class="navigator">Contact</span>
+        </div>
+      </div>
+      <div class="mobileBodyNavigation" id="mobileBodyNavigation">
+        <div class="navigators" id="navigators" onclick="myFunction(event)">
+          <span><i class="fa fa-home Home" aria-hidden="true"></i></span>
+          <span><i class="fa fa-user-o About Me" aria-hidden="true"></i></span>
+          <span><i class="fa fa-laptop Skills" aria-hidden="true"></i></span>
+          <span
+            ><i class="fa fa-envelope-open Contact" aria-hidden="true"></i
+          ></span>
+        </div>
+      </div>
     </div>
-</body>
-<script src="script.js"></script>
-
+  </body>
+  <script src="script.js"></script>
 </html>
